@@ -1,0 +1,15 @@
+html{
+    font-size: 100%;
+    // it makes the size of element include padding in the final width
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+}

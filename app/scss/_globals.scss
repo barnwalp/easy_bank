@@ -53,3 +53,18 @@ button, .button{
     border-radius: 50px;
     cursor: pointer;
 }
+
+// Visibility
+.hide-for-mobile{
+    // hide for mobile and tablet
+    @include breakpoint-down(medium){
+      display: none;
+    }
+}
+
+.hide-for-desktop{
+    // hide for dektop viewport
+    @include breakpoint-up(large){
+      display: none;
+    }
+}

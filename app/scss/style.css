@@ -48,7 +48,7 @@ a, a:visited, a:hover {
 }
 
 button, .button {
-  padding: 0.875em 1.875em;
+  padding: 0.75em 1.875em;
   background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background: linear-gradient(to right, #31d35c, #2bb7da);
   color: white;
@@ -71,7 +71,7 @@ button, .button {
 }
 
 .header nav {
-  padding: 24px;
+  padding: 1.0625em 1.5em;
 }
 
 .header__logo img {
@@ -93,10 +93,27 @@ button, .button {
 .header__links a {
   font-size: size(14);
   color: #9698a6;
+  position: relative;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
 }
 
 .header__links a:not(:last-child) {
   margin-right: 2em;
+}
+
+.header__links a::after {
+  content: "";
+  position: absolute;
+  background: lime;
+  width: 100%;
+  height: 5px;
+  bottom: -30px;
+  left: 0;
+}
+
+.header__links a:hover {
+  color: #2d314d;
 }
 
 .header__cta {

@@ -105,19 +105,33 @@ button, .button {
 .header__links a::after {
   content: "";
   position: absolute;
-  background: lime;
   width: 100%;
   height: 5px;
   bottom: -30px;
   left: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 
 .header__links a:hover {
   color: #2d314d;
 }
 
+.header__links a:hover::after {
+  opacity: 1;
+}
+
 .header__cta {
   font-size: size(14);
   color: white;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.header__cta:hover {
+  opacity: 0.75;
 }
 /*# sourceMappingURL=style.css.map */

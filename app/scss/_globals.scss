@@ -44,7 +44,7 @@ a, a:visited, a:hover{
 
 // Buttons
 button, .button{
-    padding: 1rem 1.875rem;     // 16px 30 px
+    padding: size(14) size(30);     // 14px 30 px
     // to right makes the gradient change from left to right
     background: linear-gradient(to right, $LimeGreen, $BrightCyan);
     color: $White;

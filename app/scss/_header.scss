@@ -83,4 +83,14 @@
         opacity: 0.75;
       }
   }
+  .overlay{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient($DarkBlue, transparent);
+    position: fixed;
+    top: size(60);
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
 }

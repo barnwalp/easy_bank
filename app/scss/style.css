@@ -152,4 +152,16 @@ button, .button {
 .header__cta:hover {
   opacity: 0.75;
 }
+
+.header .overlay {
+  width: 100%;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
+  background-image: linear-gradient(#2d314d, transparent);
+  position: fixed;
+  top: 3.75em;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
 /*# sourceMappingURL=style.css.map */

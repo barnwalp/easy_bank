@@ -70,6 +70,20 @@ button, .button {
   }
 }
 
+.header.open .header__menu > span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header.open .header__menu > span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.open .header__menu > span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 .header nav {
   padding: 1.0625em 1.5em;
 }
@@ -92,20 +106,6 @@ button, .button {
 
 .header__menu > span:not(:last-child) {
   margin-bottom: 5px;
-}
-
-.header__menu.open > span:first-child {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.header__menu.open > span:nth-child(2) {
-  opacity: 0;
-}
-
-.header__menu.open > span:last-child {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
 }
 
 .header__links a {

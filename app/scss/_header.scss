@@ -1,4 +1,19 @@
 .header{
+  //open header styles
+  &.open{
+    .header__menu{
+      >span:first-child{
+        transform: rotate(45deg);
+      }
+      >span:nth-child(2){
+        opacity: 0;
+      }
+      >span:last-child{
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
   nav{
     padding: size(17) size(24);
   }
@@ -21,18 +36,6 @@
       //apply to first two spans
       &:not(:last-child){
         margin-bottom: 5px;
-      }
-    }
-
-    &.open{
-      >span:first-child{
-        transform: rotate(45deg);
-      }
-      >span:nth-child(2){
-        opacity: 0;
-      }
-      >span:last-child{
-        transform: rotate(-45deg);
       }
     }
   }

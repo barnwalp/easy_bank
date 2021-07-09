@@ -24,6 +24,12 @@ a, a:visited, a:hover{
   text-decoration: none;
 }
 
+// Spacing
+.container {
+  padding-left: size(24);
+  padding-right: size(24);
+}
+
 // Flexbox
 
 .flex{

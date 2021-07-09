@@ -89,6 +89,11 @@ a, a:visited, a:hover {
   text-decoration: none;
 }
 
+.container {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -164,7 +169,8 @@ button, .button {
 }
 
 .header nav {
-  padding: 1.0625em 1.5em;
+  padding-top: 1.0625em;
+  padding-bottom: 1.0625em;
 }
 
 .header__logo img {
@@ -199,11 +205,12 @@ button, .button {
   width: 85%;
   margin-top: 1.7rem;
   border-radius: 7px;
+  padding: 1.625em;
 }
 
 .header__menu a {
   color: #2d314d;
-  padding: 1em;
+  padding: 0.625em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -30,6 +30,8 @@ a, a:visited, a:hover{
 
 // Spacing
 .container {
+  padding-top: size(36);
+  padding-bottom: size(36);
   padding-left: size(24);
   padding-right: size(24);
 }
@@ -54,27 +56,29 @@ a, a:visited, a:hover{
 
 // Buttons
 button, .button{
-    padding: size(12) size(30);     // 14px 30 px
-    // to right makes the gradient change from left to right
-    background: linear-gradient(to right, $LimeGreen, $BrightCyan);
-    color: $White;
-    font-weight: 400;
-    border: 0;
-    border-radius: 50px;
-    cursor: pointer;
+  // changing display to inline-block from inline
+  display: inline-block;    
+  padding: size(12) size(30);     // 14px 30 px
+  // to right makes the gradient change from left to right
+  background: linear-gradient(to right, $LimeGreen, $BrightCyan);
+  color: $White;
+  font-weight: 400;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
 }
 
 // Visibility
 .hide-for-mobile{
-    // hide for mobile and tablet
-    @include breakpoint-down(medium){
-      display: none;
-    }
+  // hide for mobile and tablet
+  @include breakpoint-down(medium){
+    display: none;
+  }
 }
 
 .hide-for-desktop{
-    // hide for dektop viewport
-    @include breakpoint-up(large){
-      display: none;
-    }
+  // hide for dektop viewport
+  @include breakpoint-up(large){
+    display: none;
+  }
 }

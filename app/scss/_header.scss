@@ -24,7 +24,8 @@
     bottom: 0px;
     left: 0px;
   }
-
+  
+  // This will take affect instead of container padding due to specificty
   nav{
     padding-top: size(17);
     padding-bottom: size(17);

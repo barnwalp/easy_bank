@@ -119,6 +119,8 @@ a, a:visited, a:hover {
 }
 
 .container {
+  padding-top: 2.25em;
+  padding-bottom: 2.25em;
   padding-left: 1.5em;
   padding-right: 1.5em;
 }
@@ -148,6 +150,7 @@ a, a:visited, a:hover {
 }
 
 button, .button {
+  display: inline-block;
   padding: 0.75em 1.875em;
   background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background: linear-gradient(to right, #31d35c, #2bb7da);

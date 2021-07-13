@@ -13,8 +13,18 @@
     // only after adding height, would the background-image be added
     min-height: size(280);
   }
-
   &__text {
-    
+      text-align: center;
+    h1 {
+      font-weight: 300;
+      font-size: size(37);
+      line-height: 1.15;
+      color: $DarkBlue;
+      margin-bottom: size(24);
+    } 
+    p {
+      line-height: 1.5;
+      margin-bottom: size(36);
+    }
   }
 }

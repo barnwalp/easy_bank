@@ -4,11 +4,13 @@
 //   margin: 0 size(24);
 
   &__image {
-    background-image: url(../../images/bg-intro-desktop.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    // height: 10px;
+    // adding multiple images at same place
+    background-image: url(../../images/image-mockups.png), url(../../images/bg-intro-desktop.svg);
+    // using different size for different image
+    background-size: 93%, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center bottom, center center;
+    // only after adding height, would the background-image be added
     min-height: size(280);
   }
 

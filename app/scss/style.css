@@ -65,10 +65,10 @@
 }
 
 .hero__image {
-  background-image: url(../../images/bg-intro-desktop.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-image: url(../../images/image-mockups.png), url(../../images/bg-intro-desktop.svg);
+  background-size: 93%, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, center center;
   min-height: 17.5em;
 }
 

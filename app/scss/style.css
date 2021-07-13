@@ -64,6 +64,14 @@
           animation: fade-out 300ms ease-in-out 1 forwards;
 }
 
+.hero__image {
+  background-image: url(../../images/bg-intro-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 17.5em;
+}
+
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;

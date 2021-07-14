@@ -159,6 +159,13 @@ button, .button {
   border: 0;
   border-radius: 50px;
   cursor: pointer;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+  font-size: size(14);
+}
+
+button:hover, .button:hover {
+  opacity: 0.75;
 }
 
 @media (max-width: 63.937em) {
@@ -283,16 +290,5 @@ button, .button {
 
 .header__links a:hover::after {
   opacity: 1;
-}
-
-.header__cta {
-  font-size: size(14);
-  color: white;
-  -webkit-transition: opacity 200ms ease-in-out;
-  transition: opacity 200ms ease-in-out;
-}
-
-.header__cta:hover {
-  opacity: 0.75;
 }
 /*# sourceMappingURL=style.css.map */

@@ -66,6 +66,11 @@ button, .button{
   border: 0;
   border-radius: 50px;
   cursor: pointer;
+  transition: opacity 200ms ease-in-out;
+  font-size: $font-sm;
+  &:hover {
+    opacity: 0.75;
+  }
 }
 
 // Visibility

@@ -4,15 +4,15 @@
 $base-size: 16;
 //You can replace rem with any other value you want (rem is most preferred value for web)
 @function size($target, $context: $base-size) {
-  @return ($target / $context) * 1em;
+  @return ($target / $context) * 1rem;
 }
 
 // 640px 1024px 1400px
-$breakpoints-up: ("medium": "40em", "large": "64em", "xlarge": "87.5em");
+$breakpoints-up: ("medium": "40rem", "large": "64rem", "xlarge": "87.5rem");
 
 // breakpoints down will be litter different to avoid conflict
 // 639px 1023px 1399px
-$breakpoints-down: ("small": "39.937em", "medium": "63.937em", "large": "87.437em");
+$breakpoints-down: ("small": "39.937rem", "medium": "63.937rem", "large": "87.437rem");
 
 @mixin breakpoint-up($size) {
   @media (min-width: map-get($breakpoints-up, $size)){

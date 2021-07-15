@@ -30,6 +30,8 @@ a, a:visited, a:hover{
 
 // Spacing
 .container {
+  max-width: size(1130);
+  margin: 0 auto;
   padding-top: size(36);
   padding-bottom: size(36);
   padding-left: size(24);

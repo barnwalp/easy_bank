@@ -157,9 +157,38 @@ a, a:visited, a:hover {
 .container {
   max-width: 70.625rem;
   margin: 0 auto;
+}
+
+.container--pall {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
   padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.container--py {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.container--px {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.container--pt {
+  padding-top: 2.25rem;
+}
+
+.container--pb {
+  padding-bottom: 2.25rem;
+}
+
+.container--pl {
+  padding-left: 1.5rem;
+}
+
+.container--pr {
   padding-right: 1.5rem;
 }
 
@@ -273,13 +302,11 @@ button:hover, .button:hover {
 .header__menu {
   visibility: hidden;
   background: white;
-  width: 90%;
   position: absolute;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 85%;
   margin-top: 1.7rem;
   border-radius: 7px;
   padding: 1.625rem;

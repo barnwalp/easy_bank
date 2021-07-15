@@ -56,13 +56,12 @@
   &__menu {
     visibility: hidden;
     background: $White;
-    width: 90%; 
     position: absolute;
     left: 0;
     right: 0;
+    // width: 85%;
     margin-left: auto;
     margin-right: auto;
-    width: 85%;
     margin-top: 1.7rem;
     border-radius: 7px;
     padding: size(26);

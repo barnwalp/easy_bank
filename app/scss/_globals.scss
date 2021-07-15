@@ -32,10 +32,33 @@ a, a:visited, a:hover{
 .container {
   max-width: size(1130);
   margin: 0 auto;
-  padding-top: size(36);
-  padding-bottom: size(36);
-  padding-left: size(24);
-  padding-right: size(24);
+
+  &--pall {
+    padding-top: size(36);
+    padding-bottom: size(36);
+    padding-left: size(24);
+    padding-right: size(24);
+  }
+  &--py {
+    padding-top: size(36);
+    padding-bottom: size(36);
+  }
+  &--px {
+    padding-left: size(24);
+    padding-right: size(24);
+  }
+  &--pt {
+    padding-top: size(36);
+  }
+  &--pb {
+    padding-bottom: size(36);
+  }
+  &--pl {
+    padding-left: size(24);
+  }
+  &--pr {
+    padding-right: size(24);
+  }
 }
 
 // Flexbox

@@ -1,11 +1,25 @@
 .hero {
-//   display: flex;
-//   align-items: center;       
-//   margin: 0 size(24);
+  @include breakpoint-up(large) {
+    display: flex;
+    &__image {
+      background-image: url(../../images/image-mockups.png), url(../../images/bg-intro-desktop.svg);
+      flex: 1;
+      order: 2;
+    }
+    &__text {
+      flex: 1;
+      order: 1;
+    }
+  }
+  @include breakpoint-down(medium) {
+    &__text {
+      text-align: center;
+    }
+  }
 
   &__image {
     // adding multiple images at same place
-    background-image: url(../../images/image-mockups.png), url(../../images/bg-intro-desktop.svg);
+    background-image: url(../../images/image-mockups.png), url(../../images/bg-intro-mobile.svg);
     // using different size for different image
     background-size: 93%, cover;
     background-repeat: no-repeat, no-repeat;
@@ -14,7 +28,7 @@
     min-height: size(280);
   }
   &__text {
-      text-align: center;
+    //   text-align: center;
     h1 {
       font-weight: 300;
       font-size: size(37);

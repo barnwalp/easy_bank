@@ -18,6 +18,9 @@ body{
   font-weight: 300;
   font-family: 'Public Sans', sans-serif;
   color: $GrayishBlue;
+  @include breakpoint-up(medium) {
+    font-size: $font-lg;
+  }
 }
 
 // remove inbuilt browser design

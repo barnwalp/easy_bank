@@ -1,8 +1,9 @@
 .feature {
+  background-color: $LightGrayishBlue;
   &__text {
     h2 {
       font-weight: 300;
-      font-size: size(22);
+      font-size: size(25);
       line-height: 1.15;
       color: $DarkBlue;
       margin-bottom: size(24);
@@ -19,5 +20,18 @@
   }
   &__item {
     width: 25%;
+  }
+  &__icon {
+      margin-bottom: size(24);
+  }
+  &__title {
+      font-weight: 300;
+      color: $DarkBlue;
+      font-size: size(18);
+      line-height: 1.15;
+      margin-bottom: size(20);
+  }
+  &__description {
+      margin-right: size(18);
   }
 }

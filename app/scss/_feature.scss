@@ -1,0 +1,23 @@
+.feature {
+  &__text {
+    h2 {
+      font-weight: 300;
+      font-size: size(22);
+      line-height: 1.15;
+      color: $DarkBlue;
+      margin-bottom: size(24);
+    } 
+    p {
+      line-height: 1.5;
+      margin-bottom: size(36);
+    }
+  }
+  &__grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 25%;
+  }
+}

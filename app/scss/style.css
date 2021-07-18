@@ -125,6 +125,32 @@
   }
 }
 
+.feature__text h2 {
+  font-weight: 300;
+  font-size: 1.375rem;
+  line-height: 1.15;
+  color: #2d314d;
+  margin-bottom: 1.5rem;
+}
+
+.feature__text p {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
+}
+
+.feature__grid {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.feature__item {
+  width: 25%;
+}
+
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;

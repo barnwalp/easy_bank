@@ -17,9 +17,16 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    @include breakpoint-down(small) {
+      flex-direction: column;
+    }
   }
   &__item {
     width: 25%;
+    @include breakpoint-down(small) {
+      width: 100%;
+      text-align: center;
+    }
   }
   &__icon {
       margin-bottom: size(24);
@@ -32,6 +39,11 @@
       margin-bottom: size(20);
   }
   &__description {
-      margin-right: size(18);
+    margin-right: size(18);
+    @include breakpoint-down(small) {
+      &:not(last-child) {
+        margin-bottom: size(22);
+      }
+    }
   }
 }

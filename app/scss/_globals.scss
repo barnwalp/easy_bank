@@ -34,8 +34,8 @@ a, a:visited, a:hover{
 // Spacing
 
 .wrapper {
-  max-width: size(1130);
-  margin: 0 auto;
+  // max-width: size(1130);
+  // margin: 0 auto;
   padding-top: size(17);
   padding-bottom: size(17);
 }
@@ -54,6 +54,10 @@ a, a:visited, a:hover{
   &--px {
     padding-left: size(24);
     padding-right: size(24);
+    @include breakpoint-up(medium) {
+      padding-left: size(65);
+      padding-right: size(65);
+    }
   }
   &--pt {
     padding-top: size(36);

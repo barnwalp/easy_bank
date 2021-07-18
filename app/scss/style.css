@@ -97,10 +97,10 @@
   }
   .hero__image {
     background-image: url(../../images/image-mockups.png), url(../../images/bg-intro-desktop.svg);
-    background-size: 60%, cover;
+    background-size: 65%, 120%;
     background-repeat: no-repeat, no-repeat;
     background-attachment: local, local;
-    background-position: center center, center center;
+    background-position: 12.8125rem center, 4.6875rem center;
     -webkit-box-flex: 3;
         -ms-flex: 3;
             flex: 3;
@@ -161,8 +161,6 @@ a, a:visited, a:hover {
 }
 
 .wrapper {
-  max-width: 70.625rem;
-  margin: 0 auto;
   padding-top: 1.0625rem;
   padding-bottom: 1.0625rem;
 }
@@ -182,6 +180,13 @@ a, a:visited, a:hover {
 .container--px {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+@media (min-width: 40rem) {
+  .container--px {
+    padding-left: 4.0625rem;
+    padding-right: 4.0625rem;
+  }
 }
 
 .container--pt {

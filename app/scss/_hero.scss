@@ -29,10 +29,11 @@
     display: flex;
     &__image {
       background-image: url(../../images/image-mockups.png), url(../../images/bg-intro-desktop.svg);
-      background-size: 60%, cover;
+      background-size: 65%, 120%;
       background-repeat: no-repeat, no-repeat;
       background-attachment: local, local;
-      background-position: center center, center center;
+      background-position: size(205) center, size(75) center;
+      // background-clip: border-box, padding-box;
       flex: 3;
       order: 2;
     //   min-height: size(280);

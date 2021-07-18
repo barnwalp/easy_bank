@@ -64,6 +64,10 @@
           animation: fade-out 300ms ease-in-out 1 forwards;
 }
 
+.hero {
+  background-color: #fafafa;
+}
+
 .hero__image {
   background-image: url(../../images/image-mockups.png), url(../../images/bg-intro-mobile.svg);
   background-size: 93%, cover;
@@ -156,9 +160,11 @@ a, a:visited, a:hover {
   text-decoration: none;
 }
 
-.container {
+.wrapper {
   max-width: 70.625rem;
   margin: 0 auto;
+  padding-top: 1.0625rem;
+  padding-bottom: 1.0625rem;
 }
 
 .container--pall {
@@ -274,11 +280,6 @@ button:hover, .button:hover {
   right: 0px;
   bottom: 0px;
   left: 0px;
-}
-
-.header nav {
-  padding-top: 1.0625rem;
-  padding-bottom: 1.0625rem;
 }
 
 .header__logo img {

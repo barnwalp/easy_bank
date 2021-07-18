@@ -32,10 +32,15 @@ a, a:visited, a:hover{
 }
 
 // Spacing
-.container {
+
+.wrapper {
   max-width: size(1130);
   margin: 0 auto;
+  padding-top: size(17);
+  padding-bottom: size(17);
+}
 
+.container {
   &--pall {
     padding-top: size(36);
     padding-bottom: size(36);

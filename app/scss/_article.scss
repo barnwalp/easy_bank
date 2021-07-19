@@ -19,18 +19,46 @@
   &__grid {
     display: grid;
     grid-template-columns: 1fr;
+    gap: size(30);
+    // grid-template-columns: repeat(auto-fit, minmax(size(230), 1fr));
     @include breakpoint-up(medium) {
-        grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
     @include breakpoint-up(large) {
-        grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, 1fr);
     }
   }
   &__item {
-
+    border-radius: size(5);
+    // to ensure that rounded border show
+    overflow: hidden;
+    box-shadow: 0px 3px 12px rgba(0,0,0,0.15);
   }
   &__image {
-      background-repeat: no-repeat;
-      background-size: cover;
+    height: size(200);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  &__text {
+    background-color: $White;
+    padding: size(30) size(30) size(40) size(30);
+    color: $GrayishBlue;
+    @include breakpoint-up(medium) {
+      padding: size(30) size(25);
+    }
+  }
+  &__author {
+    font-size: size(10);
+    margin-bottom: size(8);
+  }
+  &__title {
+    font-size: size(17);
+    line-height: 1.2;
+    color: $DarkBlue;
+    margin-bottom: size(8);
+  }
+  &__description {
+    font-size: size(13);
   }
 }

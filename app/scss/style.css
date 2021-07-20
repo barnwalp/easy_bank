@@ -528,21 +528,59 @@ button:hover, .button:hover {
   background-color: #2d314d;
   color: white;
   text-align: center;
+  padding: 2.8125rem 0;
+}
+
+@media (min-width: 64rem) {
+  .footer {
+    padding: 2.1875rem 3.75rem;
+    border-collapse: collapse;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 0.875rem;
+  }
 }
 
 .footer a {
   color: white;
 }
 
-.footer__logo img {
-  padding-top: 2.5rem;
-}
-
 .footer__social {
   padding: 1.875rem 0;
 }
 
+.footer__social a img {
+  padding-right: 0.625rem;
+}
+
 .footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 1.25rem;
+}
+
+.footer__col1 a {
+  padding-bottom: 1.25rem;
+  color: #9698a6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -552,25 +590,29 @@ button:hover, .button:hover {
           flex-direction: column;
 }
 
-.footer__links.col1 a {
-  padding-bottom: 1.25rem;
+.footer__col2 a {
   color: #9698a6;
-}
-
-.footer__links.col2 a {
-  color: #9698a6;
-}
-
-.footer__links.col2 a:not(:last-child) {
   padding-bottom: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.footer__cta {
-  padding: 2.5rem 0;
+.footer__cta a.button {
+  margin: 1.5625rem 0;
+}
+
+@media (min-width: 64rem) {
+  .footer__cta a.button {
+    margin: 0 0 1.25rem 0;
+  }
 }
 
 .footer__copyright {
-  padding-top: 2.5rem;
   color: #9698a6;
 }
 /*# sourceMappingURL=style.css.map */

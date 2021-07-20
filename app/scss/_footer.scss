@@ -2,43 +2,66 @@
   background-color: $DarkBlue;
   color: $White;
   text-align: center;
+  padding: size(45) 0;
+  @include breakpoint-up(large) {
+    padding: size(35) size(60);
+    border-collapse: collapse;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: $font-sm;
+  }
   a {
     color: $White;
   }
+  &__company__logos {
+
+  }
   &__logo {
     img {
-      padding-top: size(40);
     }
   }
   &__social {
+    a img {
+      padding-right: size(10);
+    }
     padding: size(30) 0;
   }
   &__links {
     display: flex;
-    flex-direction: column;
-    &.col1 {
-      a {
-        padding-bottom: size(20);
-        color: $GrayishBlue;
-      }
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: size(20);
+  }
+  &__col1 {
+    a {
+      padding-bottom: size(20);
+      color: $GrayishBlue;
+      display: flex;
+      flex-direction: column;
     }
-    &.col2 {
-      a {
-        color: $GrayishBlue;
-        &:not(:last-child) {
-          padding-bottom: size(20);
-        }
-      }
+  } 
+  &__col2 {
+    a {
+      color: $GrayishBlue;
+      padding-bottom: size(20);
+      display: flex;
+      flex-direction: column;
     }
   }
   &__cta {
-    padding: size(40) 0;
     a.button {
-
+      margin: size(25) 0;
+    }
+    @include breakpoint-up(large) {
+      a.button {
+      margin: 0 0 size(20) 0;
+      }
     }
   }
   &__copyright {
-    padding-top: size(40); 
     color: $GrayishBlue;
   }
 }

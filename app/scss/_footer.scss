@@ -1,29 +1,44 @@
 .footer {
   background-color: $DarkBlue;
   color: $White;
+  text-align: center;
   a {
     color: $White;
   }
   &__logo {
+    img {
+      padding-top: size(40);
+    }
   }
   &__social {
-    
+    padding: size(30) 0;
   }
   &__links {
-    
+    display: flex;
+    flex-direction: column;
     &.col1 {
-
+      a {
+        padding-bottom: size(20);
+        color: $GrayishBlue;
+      }
     }
     &.col2 {
-
+      a {
+        color: $GrayishBlue;
+        &:not(:last-child) {
+          padding-bottom: size(20);
+        }
+      }
     }
   }
   &__cta {
+    padding: size(40) 0;
     a.button {
 
     }
   }
   &__copyright {
-    
+    padding-top: size(40); 
+    color: $GrayishBlue;
   }
 }

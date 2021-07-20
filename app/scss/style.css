@@ -252,6 +252,7 @@ button:hover, .button:hover {
   position: absolute;
   left: 0;
   right: 0;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1.7rem;

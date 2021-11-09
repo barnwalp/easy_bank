@@ -1,19 +1,19 @@
-.header{
+.header {
   //open header styles
-  &.open{
-    .header__toggle{
-      >span:first-child{
+  &.open {
+    .header__toggle {
+      > span:first-child {
         transform: rotate(45deg);
       }
-      >span:nth-child(2){
+      > span:nth-child(2) {
         opacity: 0;
       }
-      >span:last-child{
+      > span:last-child {
         transform: rotate(-45deg);
       }
     }
   }
-  .overlay{
+  .overlay {
     visibility: hidden;
     width: 100%;
     height: 100vh;
@@ -24,22 +24,22 @@
     bottom: 0px;
     left: 0px;
   }
-  
+
   // This will take affect instead of container padding due to specificty
-  nav{
+  nav {
     // padding-top: size(17);
     // padding-bottom: size(17);
   }
 
-  &__logo{
-    img{
-      width: size(141);    // 141px
-      height: size(22);    // 22px
+  &__logo {
+    img {
+      width: size(141); // 141px
+      height: size(22); // 22px
     }
   }
 
-  &__toggle{
-    >span{
+  &__toggle {
+    > span {
       display: block;
       width: 26px;
       height: 2px;
@@ -47,7 +47,7 @@
       transform-origin: 3px 1px;
       transition: all 300ms ease-in-out;
       //apply to first two spans
-      &:not(:last-child){
+      &:not(:last-child) {
         margin-bottom: 5px;
       }
     }
@@ -73,18 +73,18 @@
     }
   }
 
-  &__links{
-    a{
+  &__links {
+    a {
       font-size: $font-sm;
       color: $GrayishBlue;
       position: relative;
       transition: color 200ms ease-in-out;
 
-      &:not(:last-child){
+      &:not(:last-child) {
         margin-right: size(32);
       }
 
-      &::after{
+      &::after {
         content: "";
         position: absolute;
         width: 100%;
@@ -98,10 +98,10 @@
         transition: opacity 200ms ease-in-out;
       }
 
-      &:hover{
+      &:hover {
         color: $DarkBlue;
 
-        &::after{
+        &::after {
           opacity: 1;
         }
       }
